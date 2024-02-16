@@ -37,6 +37,7 @@ export async function generateMetadata(
 export default function page({ params: { slug } }: Props) {
   return (
     <div>
+      <h1>OGTag</h1>
       <div>전달 받은 slug: {slug}</div>
     </div>
   );
