@@ -16,7 +16,7 @@ export async function generateMetadata(
   const { slug } = params;
   console.log("slug:", slug);
 
-  const { url, title } = searchParams;
+  const { url, title, description } = searchParams;
   console.log("url:", url);
   console.log("searchParams:", searchParams);
 
@@ -24,8 +24,8 @@ export async function generateMetadata(
     title: `${title}`,
     description: "모델을 보여주는 페이지 입니다.",
     openGraph: {
-      title: `오픈 그래프로 생성된 타이틀`,
-      description: "오픈 그래프로 생성된 description",
+      title,
+      description,
       url: `https://twin.world`,
       images: [
         {
