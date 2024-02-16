@@ -5,15 +5,20 @@ type Props = {
   params: {
     slug: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 // 서버 코드
 export async function generateMetadata(
-  { params }: Props,
+  { params, searchParams }: Props,
   parent: ResolvingMetadata
 ) {
   const { slug } = params;
-  console.log(slug);
+  console.log("slug:", slug);
+
+  const { url } = searchParams;
+  console.log("url:", url);
+  console.log("searchParams:", searchParams);
 
   const previousTitle = (await parent).title || "1111";
   console.log(previousTitle);
@@ -27,7 +32,7 @@ export async function generateMetadata(
       url: `https://twin.world`,
       images: [
         {
-          url: `https://picsum.photos/${slug}`,
+          url,
           width: 300,
           height: 300,
         },
