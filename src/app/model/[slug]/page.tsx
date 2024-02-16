@@ -16,15 +16,12 @@ export async function generateMetadata(
   const { slug } = params;
   console.log("slug:", slug);
 
-  const { url } = searchParams;
+  const { url, title } = searchParams;
   console.log("url:", url);
   console.log("searchParams:", searchParams);
 
-  const previousTitle = (await parent).title || "1111";
-  console.log(previousTitle);
-
   return {
-    title: `${previousTitle}`,
+    title: `${title}`,
     description: "모델을 보여주는 페이지 입니다.",
     openGraph: {
       title: `오픈 그래프로 생성된 타이틀`,
