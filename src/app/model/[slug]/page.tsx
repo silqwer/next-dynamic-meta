@@ -23,10 +23,12 @@ export async function generateMetadata(
     description: "모델을 보여주는 페이지 입니다.",
     openGraph: {
       title: `오픈 그래프로 생성된 타이틀`,
+      description: "오픈 그래프로 생성된 description",
+      url: `https://twin.world`,
       images: [
         {
-          url: `${slug}`,
-          width: 600,
+          url: `https://picsum.photos/${slug}`,
+          width: 300,
           height: 300,
         },
       ],
