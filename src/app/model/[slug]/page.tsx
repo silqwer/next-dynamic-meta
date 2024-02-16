@@ -25,7 +25,7 @@ export async function generateMetadata(
       title: `오픈 그래프로 생성된 타이틀`,
       images: [
         {
-          url: `https://via.placeholder.com/${slug}`,
+          url: `${slug}`,
           width: 600,
           height: 300,
         },
