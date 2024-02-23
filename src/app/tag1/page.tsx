@@ -1,7 +1,5 @@
 import React from "react";
 
-import ogImage from "1.png";
-
 export async function generateMetadata() {
   return {
     openGraph: {
@@ -10,9 +8,9 @@ export async function generateMetadata() {
       url: `https://twin.world`,
       images: [
         {
-          url: ogImage.src,
-          width: ogImage.width,
-          height: ogImage.height,
+          url: "/1.png",
+          width: 300,
+          height: 300,
         },
       ],
     },
