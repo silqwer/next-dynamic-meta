@@ -8,7 +8,7 @@ export async function generateMetadata() {
       url: `https://twin.world`,
       images: [
         {
-          url: "/1.png",
+          url: "https://main--next-dynamic-meta.netlify.app/1.png",
           width: 300,
           height: 300,
         },
