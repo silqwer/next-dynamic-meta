@@ -8,7 +8,7 @@ export async function generateMetadata() {
       url: `https://twin.world`,
       images: [
         {
-          url: `https://picsum.photos/300`,
+          url: `/1.png`,
           width: 300,
           height: 300,
         },
